@@ -225,6 +225,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -236,6 +249,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart-60-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quickstart (60 seconds)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -349,6 +390,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart-60-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quickstart (60 seconds)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -364,10 +422,31 @@
 
 
 <h1 id="getting-started-with-the-example-api">Getting Started with the Example API</h1>
-<p>We’ll use the free JSONPlaceholder API.</p>
-<p>Base URL: https://jsonplaceholder.typicode.com</p>
-<p>Example command to list users:</p>
-<p>curl -s https://jsonplaceholder.typicode.com/users</p>
+<p>This guide gets you from zero to a working request in under 2 minutes using the free <strong>JSONPlaceholder</strong> API.<br />
+It’s perfect for demonstrating API calls and documentation skills—no sign-up or API key required.</p>
+<hr />
+<h2 id="quickstart-60-seconds">Quickstart (60 seconds)</h2>
+<ol>
+<li>
+<p><strong>Base URL</strong>
+https://jsonplaceholder.typicode.com/?utm_source=chatgpt.com</p>
+</li>
+<li>
+<p><strong>Read data (GET)</strong>
+```bash
+curl -s https://jsonplaceholder.typicode.com/users/1</p>
+</li>
+</ol>
+<p>Expected response (shortened):</p>
+<p>{ "id": 1, "name": "Leanne Graham", "email": "Sincere@april.biz" }</p>
+<ol>
+<li>Create data (POST)</li>
+</ol>
+<p>curl -s -X POST https://jsonplaceholder.typicode.com/posts \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Hello","body":"First post","userId":1}'</p>
+<p>Expected response: </p>
+<p>{ "title": "Hello", "body": "First post", "userId": 1, "id": 101 }</p>
 
 
 
