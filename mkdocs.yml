@@ -1,0 +1,14 @@
+site_name: My Docs
+
+nav:
+  - Home: index.md
+  - Getting Started: api-getting-started.md
+  - Authentication: api-authentication.md
+  - Errors: api-errors.md
+  - Payments Overview: concept-payments-overview.md
+  - Tutorial: tutorial-first-api-call.md
+
+
+theme:
+  name: mkdocs
+
